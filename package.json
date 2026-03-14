@@ -5,8 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "ts-node-dev app.ts",
-    "build": "tsc && vite build", 
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
   },
