@@ -50,6 +50,17 @@ function App() {
         </div>
       </div>
       <div className="py-auto text-xl">My Email: anzin.maglente@gmail.com</div>
+      <div className="py-auto text-xl">
+        You can find my resume over here:{" "}
+        <a
+          href="https://docs.google.com/document/d/16XDk8sFw5e9Ms4csqYPMXms0JTLRXGR-/edit?usp=sharing&ouid=115388866597794014385&rtpof=true&sd=true"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-indigo-500 hover:text-indigo-700"
+        >
+          Resume
+        </a>
+      </div>
       <div className="text-3xl py-5">FEATURED WORKS</div>
       <div className="grid grid-cols-2 gap-4 justify-items-center *:box-content *:shadow *:p-2 *:hover:shadow-2xl *:transition *:h-90 *:w-90 *:overflow-hidden ">
         <a href="https://raiitou.itch.io/a-walk-to-the-store">
