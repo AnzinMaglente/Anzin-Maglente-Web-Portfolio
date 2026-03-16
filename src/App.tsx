@@ -62,15 +62,20 @@ function App() {
         </a>
       </div>
       <div className="text-3xl py-5">FEATURED WORKS</div>
-      <div className="grid grid-cols-2 gap-4 justify-items-center *:box-content *:shadow *:p-2 *:hover:shadow-2xl *:transition *:overflow-hidden ">
+      <div className="grid grid-cols-2 gap-4 justify-items-center *:box-content *:shadow *:px-2 *:pt-2 *:hover:shadow-2xl *:transition *:overflow-hidden ">
         <a href="https://raiitou.itch.io/a-walk-to-the-store">
           <img
             src="./A_Walk_To_The_Store_assessment.png"
             alt="Featured Work 1"
+            className="w-360"
           />
         </a>
         <a href="https://github.com/DC-BSU-RAK/assignment-100-tomorrow-s-web-AnzinMaglente">
-          <img src="./SneakSpeak_assessment.png" alt="Featured Work 2" />
+          <img
+            src="./SneakSpeak_assessment.png"
+            alt="Featured Work 2"
+            className="w-360"
+          />
         </a>
         <a href="https://github.com/AnzinMaglente/Fifth-Edition-Character-Builder-Application">
           <img
