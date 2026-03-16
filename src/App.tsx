@@ -1,6 +1,6 @@
 function App() {
   return (
-    <div className="mx-2.5 my-5 py-10 font-display border shadow hover:shadow-2xl sm:px-20 md:px-30 lg:px-55">
+    <div className="mx-2.5 my-5 px-5 py-10 font-display border shadow hover:shadow-2xl sm:px-20 md:px-30 lg:px-55">
       <img
         src="/anzin_profile_picture.jpg"
         alt="Profile Picture"
@@ -62,7 +62,7 @@ function App() {
         </a>
       </div>
       <div className="text-3xl py-5">FEATURED WORKS</div>
-      <div className="grid grid-cols-2 gap-4 justify-items-center *:box-content *:shadow *:p-2 *:hover:shadow-2xl *:transition *:h-90 *:w-90 *:overflow-hidden ">
+      <div className="grid grid-cols-2 gap-4 justify-items-center *:box-content *:shadow *:p-2 *:hover:shadow-2xl *:transition *:overflow-hidden ">
         <a href="https://raiitou.itch.io/a-walk-to-the-store">
           <img
             src="./A_Walk_To_The_Store_assessment.png"
