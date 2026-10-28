@@ -1,5 +1,115 @@
 @import "tailwindcss";
+@import "tailwindcss-animated";
 
 @theme {
-  --font-display: "Helvetica Neue", "Roboto", sans-serif; 
+  --color-white-text: #ededed;
+  --color-black-text: #1a1a1a;
+}
+
+/* To overwrite some styles */
+.react-photo-album--photo {
+  background-color: var(--color-white);
+  border-radius: var(--radius-2xl);
+  padding: calc(var(--spacing) * 8);
+  --tw-shadow: 0 10px 15px -3px var(--tw-shadow-color, rgb(0 0 0 / 0.1)),
+    0 4px 6px -4px var(--tw-shadow-color, rgb(0 0 0 / 0.1));
+  box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow),
+    var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+}
+
+.react-multi-carousel-dot--active button {
+  background: #ffffff !important;
+}
+
+.quilljsContainer {
+  padding: 0px 5rem;
+  line-height: 1.2;
+  color: var(--color-black-text);
+}
+
+.quilljsContainer img {
+  max-width: 100%;
+  height: auto;
+  place-self: center;
+  margin: 1rem;
+}
+
+.ql-toolbar.ql-snow,
+.ql-picker.qlsnow {
+  overflow-y: auto;
+}
+
+/* Loading Screen component */
+.loader-overlay {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(63, 60, 231, 0.7); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.loader-spinner,
+.loader-spinner:after {
+  box-sizing: border-box;
+}
+.loader-spinner {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+.loader-spinner:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  box-sizing: border-box;
+  border: 32px solid white;
+  border-color: white transparent white transparent;
+  animation: loader-spinner 1.2s infinite;
+}
+@keyframes loader-spinner {
+  0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    transform: rotate(1800deg);
+  }
+}
+
+/* Search component */
+.article-search-area {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.article-search-text {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  color: #28282b;
+  border: #ddd 1px solid;
+}
+
+.article-search-btn {
+  position: absolute;
+  right: 10px;
+  font-size: 25px;
+  color: #e74c3c;
 }
