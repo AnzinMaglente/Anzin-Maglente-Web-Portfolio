@@ -1,11 +1,4 @@
-import Router from "./pages/router";
-import { BrowserRouter } from "react-router-dom";
-import { Toaster } from "react-hot-toast";
-import Loader from "./components/partials/Loader";
-import { useSelector } from "react-redux";
-
 function App() {
-  const { loader } = useSelector((state: any) => state.loaderReducer);
   return (
     <div className="mx-2.5 my-5 px-5 py-10 font-display border shadow hover:shadow-2xl sm:px-20 md:px-30 lg:px-55">
       <img
@@ -77,7 +70,7 @@ function App() {
             className="w-360"
           />
         </a>
-        <a href="https://github.com/DC-BSU-RAK/assignment-100-tomorrow-s-web-AnzinMaglente">
+        <a href="https://github.com/AnzinMaglente/SneakSpeak-App">
           <img
             src="./SneakSpeak_assessment.png"
             alt="Featured Work 2"
