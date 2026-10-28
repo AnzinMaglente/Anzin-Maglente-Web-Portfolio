@@ -70,7 +70,7 @@ function App() {
             className="w-360"
           />
         </a>
-        <a href="https://github.com/DC-BSU-RAK/assignment-100-tomorrow-s-web-AnzinMaglente">
+        <a href="https://github.com/AnzinMaglente/SneakSpeak-App">
           <img
             src="./SneakSpeak_assessment.png"
             alt="Featured Work 2"
